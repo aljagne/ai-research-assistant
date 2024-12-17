@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Research Assistant</title>
-    <link rel="stylesheet" href="popup.css">
-</head>
-<body>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1>AI Research Assistant</h1>
-        <input type="text" id="queryInput" placeholder="Ask me anything about the page...">
-        <div id="resultsDisplay"></div>
-        <div id="loadingSpinner" class="loader" style="display:none;"></div>
+      <h1>AI Research Assistant</h1>
+      <input
+        type="text"
+        id="queryInput"
+        placeholder="Ask me anything about the page..."
+      />
+      <button id="summarizeButton">Summarize Page</button>
+      <div id="loadingSpinner" class="loader" style="display: none"></div>
+      <div id="resultsDisplay"></div>
     </div>
-   <script src="popup.js"></script>
-</body>
+    <script src="popup.js"></script>
+  </body>
 </html>
