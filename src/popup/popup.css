@@ -1,0 +1,26 @@
+body {
+    font-family: sans-serif;
+    padding: 10px;
+    width: 300px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+input[type="text"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+#resultsDisplay {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+}
