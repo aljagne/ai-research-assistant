@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "AI Research Assistant",
-  "version": "0.1.0",
+  "version": "1.0",
   "description": "A multi-purpose AI-powered research assistant.",
   "permissions": ["tabs", "activeTab", "scripting", "storage"],
   "action": {
@@ -16,16 +16,22 @@
   "background": {
     "service_worker": "src/background/background.js"
   },
-   "commands": {
-      "_execute_action": {
-        "suggested_key": {
-           "default": "Ctrl+Shift+E",
-           "mac": "Command+Shift+E"
-          },
+  "icons": {
+    "16": "src/assets/icon16.png",
+    "32": "src/assets/icon32.png",
+    "48": "src/assets/icon48.png",
+    "128": "src/assets/icon128.png"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+E",
+        "mac": "Command+Shift+E"
+      },
       "description": "Open the extension."
-      }
-    },
-    "content_security_policy": {
-        "extension_pages": "script-src 'self'; object-src 'self';"
     }
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  }
 }
